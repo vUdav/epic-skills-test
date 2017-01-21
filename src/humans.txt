@@ -1,0 +1,15 @@
+# TEAM
+	Developer: Valery Liubimov
+	Site: vudav.ru
+	Contact: v.udav [at] bk.ru
+	Twitter: @ValeraUdav
+	From: Saint-Petersburg, Russia
+	Location: Saint-Petersburg, Russia
+
+# SITE
+	Language: Russian
+	Doctype: HTML5
+	Standards: HTML5, CSS3
+	Components: Less, Jade, JavaScript, Apache Server Configs, Normalize.css
+	IDE: Sublime Text
+	Software: Gulp, Git, GitHub Pages, Photoshop, Illustrator

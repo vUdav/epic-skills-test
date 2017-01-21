@@ -1,0 +1,14 @@
+extends templates/_layout
+
+block vars
+	- var page = "<%= page %>";
+	- var title = "<%= title %>";
+	- var absoluteHeader = false;
+
+block styles
+	link(rel="stylesheet", href="css/#{page}-style.min.css")
+
+block content
+
+block scripts
+	script(src='js/#{page}-script.min.js' defer)

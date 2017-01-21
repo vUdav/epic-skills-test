@@ -1,0 +1,32 @@
+.svg-width(@width) {
+	width: @width;
+}
+
+.svg-height(@height) {
+	height: @height;
+}
+
+.svg-bgs(@width, @height) {
+	background-size: @width @height;
+}
+
+.svg-image(@name) {
+	background-image: url("images/@{name}.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.svg(@name, @width, @height) {
+	.svg-width(@width);
+	.svg-height(@height);
+	.svg-bgs(@width, @height);
+	.svg-image(@name);
+}
+
+.svg-circle-bg(@name, @width-img, @height-img, @width, @height) {
+	.svg-bgs(@width-img, @height-img);
+	.svg-image(@name);
+	width: @width;
+	height: @height;
+	border-radius: 50%;
+}
