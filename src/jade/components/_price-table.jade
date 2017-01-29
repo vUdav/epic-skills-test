@@ -1,0 +1,232 @@
+.price-table.container
+	.price-table__wrapper.col-xs-12
+		.row
+			.price-table__devices-list-wrapper.col-xs-12.col-sm-3
+				.price-table__title.h2 Что сломалось?
+				ul.price-table__devices-list
+					li.price-table__devices-item
+						a(href="#") Ноутбук
+					li.price-table__devices-item
+						a(href="#") Телефон
+					li.price-table__devices-item.price-table__devices-item--active
+						a(href="#") iPhone
+					li.price-table__devices-item
+						a(href="#") Macbook
+					li.price-table__devices-item
+						a(href="#") iPad
+					li.price-table__devices-item
+						a(href="#") iMac
+					li.price-table__devices-item
+						a(href="#") Планшет
+					li.price-table__devices-item
+						a(href="#") Фотоаппарат
+					li.price-table__devices-item
+						a(href="#") Mp3-плеер
+					li.price-table__devices-item
+						a(href="#") Жесткий диск (HDD)
+					li.price-table__devices-item
+						a(href="#") Принтер\МФУ
+					li.price-table__devices-item
+						a(href="#") GPS-навигатор
+					li.price-table__devices-item
+						a(href="#") Видеорегистратор
+					li.price-table__devices-item
+						a(href="#") Электронные книги\фоторамки
+
+			.price-table__models-list-wrapper.col-xs-12.col-sm-9
+				.row
+					.price-table__title.h2.hidden-xs.col-sm-6 Что произошло?
+					.price-table__title.h2.hidden-xs.col-sm-6 Исправить, от - до (<span class="rouble">p</span>)
+				.price-table__tabs-wrapper.clearfix
+					.price-table__tabs-title Выбрать модель:
+					ul(role="tablist").price-table__tabs
+						li(role="presentation").price-table__tab.active: a(href="#iphone4s" aria-controls="iphone4s" role="tab" data-toggle="tab") 4\4S
+						li(role="presentation").price-table__tab: a(href="#iphone5s" aria-controls="iphone4" role="tab" data-toggle="tab") 5\5S
+						li(role="presentation").price-table__tab: a(href="#iphone5c" aria-controls="iphone4" role="tab" data-toggle="tab") 5C
+						li(role="presentation").price-table__tab: a(href="#iphone6s" aria-controls="iphone4" role="tab" data-toggle="tab") 6\6S
+						li(role="presentation").price-table__tab: a(href="#iphone6p" aria-controls="iphone4" role="tab" data-toggle="tab") 6 Pluse
+						li(role="presentation").price-table__tab: a(href="#iphonese" aria-controls="iphone4" role="tab" data-toggle="tab") SE
+				.price-table__tabs-content
+					#iphone4s(role="tabpanel").price-table__tab-pane.active
+						ul.price-table__models-list
+							li.price-table__models-item.row
+								span.col-xs-6 Медленно работает, глючит, долго открывает приложения
+								span.col-xs-6
+									span.visible-xs-inline от 
+									span.price-table__models-item-from 900
+									br.visible-xs
+									span.visible-xs-inline до 
+									span.price-table__models-item-to 1 500
+									span.rouble.visible-xs-inline p
+							li.price-table__models-item.row
+								span.col-xs-6 Разбился экран или тачскрин
+								span.col-xs-6
+									span.visible-xs-inline от 
+									span.price-table__models-item-from 1 200
+									br.visible-xs
+									span.visible-xs-inline до 
+									span.price-table__models-item-to 1 900
+									span.rouble.visible-xs-inline p
+							li.price-table__models-item.row
+								span.col-xs-6 Перестала работать кнопка Home
+								span.col-xs-6
+									span.visible-xs-inline от 
+									span.price-table__models-item-from 800
+									br.visible-xs
+									span.visible-xs-inline до 
+									span.price-table__models-item-to 3500
+									span.rouble.visible-xs-inline p
+							li.price-table__models-item.row
+								span.col-xs-6 Сломалась кнопка включения или регулировка громкости
+								span.col-xs-6
+									span.visible-xs-inline от 
+									span.price-table__models-item-from 1 450
+									br.visible-xs
+									span.visible-xs-inline до 
+									span.price-table__models-item-to 3 550
+									span.rouble.visible-xs-inline p
+							li.price-table__models-item.row
+								span.col-xs-6 Поцарапан или поврежден корпус задней крышки
+								span.col-xs-6
+									span.visible-xs-inline от 
+									span.price-table__models-item-from 1 100
+									br.visible-xs
+									span.visible-xs-inline до 
+									span.price-table__models-item-to 4 000
+									span.rouble.visible-xs-inline p
+							li.price-table__models-item.row
+								span.col-xs-6 Стала тихо играть музыка, не подключается гарнитура
+								span.col-xs-6
+									span.visible-xs-inline от 
+									span.price-table__models-item-from 500
+									br.visible-xs
+									span.visible-xs-inline до 
+									span.price-table__models-item-to 3 100
+									span.rouble.visible-xs-inline p
+							li.price-table__models-item.row
+								span.col-xs-6 Вздулся аккумулятор, быстро разряжается
+								span.col-xs-6
+									span.visible-xs-inline от 
+									span.price-table__models-item-from 200
+									br.visible-xs
+									span.visible-xs-inline до 
+									span.price-table__models-item-to 8 500
+									span.rouble.visible-xs-inline p
+							li.price-table__models-item.row
+								span.col-xs-6 Сломался системный разъем
+								span.col-xs-6
+									span.visible-xs-inline от 
+									span.price-table__models-item-from 1 400
+									br.visible-xs
+									span.visible-xs-inline до 
+									span.price-table__models-item-to 3 000
+									span.rouble.visible-xs-inline p
+							li.price-table__models-item.row
+								span.col-xs-6 Разбилась камера или стала плохо работать
+								span.col-xs-6
+									span.visible-xs-inline от 
+									span.price-table__models-item-from 2 000
+									br.visible-xs
+									span.visible-xs-inline до 
+									span.price-table__models-item-to 8 900
+									span.rouble.visible-xs-inline p
+							li.price-table__models-item.row
+								span.col-xs-6 Медленно работает, глючит, долго открывает приложения
+								span.col-xs-6
+									span.visible-xs-inline от 
+									span.price-table__models-item-from 900
+									br.visible-xs
+									span.visible-xs-inline до 
+									span.price-table__models-item-to 1 500
+									span.rouble.visible-xs-inline p
+							li.price-table__models-item.row
+								span.col-xs-6 Разбился экран или тачскрин
+								span.col-xs-6
+									span.visible-xs-inline от 
+									span.price-table__models-item-from 1 200
+									br.visible-xs
+									span.visible-xs-inline до 
+									span.price-table__models-item-to 1 900
+									span.rouble.visible-xs-inline p
+							li.price-table__models-item.row
+								span.col-xs-6 Перестала работать кнопка Home
+								span.col-xs-6
+									span.visible-xs-inline от 
+									span.price-table__models-item-from 800
+									br.visible-xs
+									span.visible-xs-inline до 
+									span.price-table__models-item-to 3 500
+									span.rouble.visible-xs-inline p
+							li.price-table__models-item.row
+								span.col-xs-6 Сломалась кнопка включения или регулировка громкости
+								span.col-xs-6
+									span.visible-xs-inline от 
+									span.price-table__models-item-from 1 450
+									br.visible-xs
+									span.visible-xs-inline до 
+									span.price-table__models-item-to 3 550
+									span.rouble.visible-xs-inline p
+							li.price-table__models-item.row
+								span.col-xs-6 Поцарапан или поврежден корпус задней крышки
+								span.col-xs-6
+									span.visible-xs-inline от 
+									span.price-table__models-item-from 1 100
+									br.visible-xs
+									span.visible-xs-inline до 
+									span.price-table__models-item-to 4 000
+									span.rouble.visible-xs-inline p
+					#iphone5s(role="tabpanel").price-table__tab-pane
+						ul.price-table__models-list
+							li.price-table__models-item.row
+								span.col-xs-6 Починить iPhone 5
+								span.col-xs-6
+									span.visible-xs-inline от 
+									span.price-table__models-item-from 900
+									br.visible-xs
+									span.visible-xs-inline до 
+									span.price-table__models-item-to 50 500
+									span.rouble.visible-xs-inline p
+					#iphone5c(role="tabpanel").price-table__tab-pane
+						ul.price-table__models-list
+							li.price-table__models-item.row
+								span.col-xs-6 Починить iPhone 5C
+								span.col-xs-6
+									span.visible-xs-inline от 
+									span.price-table__models-item-from 500
+									br.visible-xs
+									span.visible-xs-inline до 
+									span.price-table__models-item-to 10 500
+									span.rouble.visible-xs-inline p
+					#iphone6s(role="tabpanel").price-table__tab-pane
+						ul.price-table__models-list
+							li.price-table__models-item.row
+								span.col-xs-6 Починить iPhone 6
+								span.col-xs-6
+									span.visible-xs-inline от 
+									span.price-table__models-item-from 1000
+									br.visible-xs
+									span.visible-xs-inline до 
+									span.price-table__models-item-to 60 500
+									span.rouble.visible-xs-inline p
+					#iphone6p(role="tabpanel").price-table__tab-pane
+						ul.price-table__models-list
+							li.price-table__models-item.row
+								span.col-xs-6 Починить iPhone 6S
+								span.col-xs-6
+									span.visible-xs-inline от 
+									span.price-table__models-item-from 1 100
+									br.visible-xs
+									span.visible-xs-inline до 
+									span.price-table__models-item-to 70 000
+									span.rouble.visible-xs-inline p
+					#iphonese(role="tabpanel").price-table__tab-pane
+						ul.price-table__models-list
+							li.price-table__models-item.row
+								span.col-xs-6 Починить iPhone SE
+								span.col-xs-6
+									span.visible-xs-inline от 
+									span.price-table__models-item-from 900
+									br.visible-xs
+									span.visible-xs-inline до 
+									span.price-table__models-item-to 20 500
+									span.rouble.visible-xs-inline p
