@@ -10,7 +10,18 @@ $(document).ready(function() {
 	var app = {};
 	window.app = app;
 
-	app.mainInit = function(){};
+	app.mainInit = function(){
+		app.mainMenu();
+	};
+
+	app.mainMenu = function() {
+		var trigger = document.querySelector('.js-menu-burger');
+		var menu = document.querySelector('.js-menu');
+
+		trigger.addEventListener('click',function() {
+			menu.classList.toggle('menu--open');
+		});
+	}
 
 	app.mainInit();
 

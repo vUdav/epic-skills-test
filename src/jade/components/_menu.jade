@@ -1,0 +1,40 @@
+.menu.js-menu
+	.menu__burger.container.hidden-lg
+		button(type="button").btn.btn--clear.js-menu-burger Меню
+	.menu__wrapper.container
+		menu.menu__list
+			li.menu__item: a(href="#")
+				img(src="img/pics/notebook-icon.png")
+				|Ноутбуки
+			li.menu__item: a(href="#")
+				img(src="img/pics/phone-icon.png")
+				|Телефоны
+			li.menu__item.menu__item--active: a(href="#")
+				img(src="img/pics/apple-icon.png")
+				|Apple
+			li.menu__item: a(href="#")
+				img(src="img/pics/device-icon.png")
+				|Портативная техника
+			li.menu__item: a(href="#")
+				img(src="img/pics/price-icon.png")
+				|Цены и акции
+			li.menu__item: a(href="#")
+				img(src="img/pics/review-icon.png")
+				|Отзывы
+		//- Location
+		.location.hidden-lg
+			.location__city
+				button(type="button" data-toggle="modal" data-target="#choose-city-modal").btn.btn--clear.btn--pseudolink Сантк-Петербург
+				span ещё 19 мастерских
+			.location__address-wrapper
+				button(type="button" data-toggle="dropdown" data-target="#choose-metro-dropdown-mobile" role="button" aria-expanded="false").btn.btn--clear.btn--dropdown м. Василеостровская
+				ul#choose-metro-dropdown-mobile.location__metro-list
+					li.location__metro-item: a(href="#") м. Василеостровская
+					li.location__metro-item: a(href="#") м. Пролетарская
+					li.location__metro-item: a(href="#") м. Улица Дыбенко
+				.location__address наб. Лейтенанта Шмидта 21<br>(1 этаж, офис 109)
+		//- Phone
+		.contacts.visible-xs
+			.contacts__wrapper
+				.contacts__phone +7 (812) 335-00-00
+				button(type="button" data-toggle="modal" data-target="#feedback-modal").btn.btn--block Перезвоните мне

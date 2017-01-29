@@ -1,30 +1,49 @@
 .location {
+	padding: 0 15px;
+	margin-bottom: 30px;
+
+	@media (min-width: @screen-sm) {
+		margin-bottom: 0;
+	}
+
+	@media (min-width: @screen-md) {
+		padding: 0;
+	}
 
 	&__city {
 		font-family: @font-roboto-slab;
-		display: inline-block;
-		margin-right: 19px;
-		vertical-align: top;
-		margin-top: 3px;
+		margin-bottom: 15px;
+
+		@media (min-width: @screen-md) {
+			display: inline-block;
+			vertical-align: top;
+			margin-right: 19px;
+			margin-top: 3px;
+			margin-bottom: 0;
+		}
 
 		span {
 			font-size: 1rem;
 			color: @text-color--gray;
 			display: block;
 			margin-top: 5px;
-			margin-left: 13px;
+			@media (min-width: @screen-md) {
+				margin-left: 13px;
+			}
 		}
 
 		button {
-			position: relative;
-			margin-left: 13px;
-			&:before {
-				content: '';
-				display: inline-block;
-				.sprite(@s-header-pin);
-				position: absolute;
-				top: -2px;
-				left: -13px;
+			@media (min-width: @screen-md) {
+				position: relative;
+				margin-left: 13px;
+				&:before {
+					content: '';
+					display: inline-block;
+					.sprite(@s-header-pin);
+					position: absolute;
+					top: -2px;
+					left: -13px;
+				}
 			}
 		}
 	}
@@ -60,6 +79,11 @@
 
 		a {
 			text-decoration: none;
+			color: @link-color !important;
+
+			&:hover {
+				color: @link-color--hover !important;
+			}
 		}
 	}
 

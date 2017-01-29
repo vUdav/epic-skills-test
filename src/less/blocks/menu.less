@@ -1,0 +1,139 @@
+.menu {
+
+	@media (min-width: @screen-md) {
+		background-color: @brand-secondary;
+	}
+
+	&__burger {
+
+		button {
+			font-family: @font-neo-sans;
+			font-size: 2rem;
+			text-transform: uppercase;
+			color: @text-color--gray;
+			transition: none;
+
+			&:focus {
+				color: @text-color--gray;
+			}
+
+			&:before {
+				content: '';
+				display: inline-block;
+				width: 20px;
+				height: 16px;
+				background-image: linear-gradient(@text-color 30%, transparent 0);
+				background-size: 100% 7px;
+				margin-right: 10px;
+			}
+		}
+	}
+
+	&__wrapper {
+		background-color: @brand-secondary;
+		color: @white;
+		height: calc(~"100vh - 141px");
+		margin-top: 10px;
+		overflow-y: auto;
+		padding: 0;
+		padding-bottom: 20px;
+		display: none;
+
+		@media (min-width: @screen-md) {
+			height: auto;
+			display: block;
+			margin-top: 0;
+			overflow-y: visible;
+			background-color: transparent;
+			padding-bottom: 0;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+		a,
+		button {
+			color: @white;
+		}
+	}
+
+	&__list {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		margin-bottom: 30px;
+
+		@media (min-width: @screen-md) {
+			margin-bottom: 0;
+			display: flex;
+		}
+	}
+
+	&__item {
+		font-family: @font-roboto-slab;
+		display: block;
+		text-align: center;
+
+		@media (min-width: @screen-md) {
+			display: inline-block;
+			width: 100%;
+			white-space: nowrap;
+		}
+
+		a {
+			text-decoration: none;
+			padding: 15px 10px;
+			display: block;
+
+			@media (min-width: @screen-md) {
+				padding: 0 20px;
+				line-height: 60px;
+			}
+
+			&:hover {
+				background-color: @brand-primary;
+
+				@media (min-width: @screen-md) {
+					img {
+						opacity: 1;
+					}
+				}
+			}
+
+			img {
+				margin-right: 10px;
+
+				@media (min-width: @screen-md) {
+					margin-right: 20px;
+					opacity: 0;
+					transition: @transition-time opacity;
+				}
+			}
+		}
+
+		&--active {
+			a {
+				background-color: @brand-primary;
+
+				@media (min-width: @screen-md) {
+					img {
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+
+	&--open {
+		.menu__wrapper {
+			display: block;
+		}
+
+		.menu__burger button {
+			color: @brand-primary;
+			&:before {
+				background-image: linear-gradient(@brand-primary 30%, transparent 0);
+			}
+		}
+	}
+
+}

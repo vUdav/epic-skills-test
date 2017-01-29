@@ -1,7 +1,15 @@
 .contacts {
 
 	&__wrapper {
-		float: right;
+		padding: 0 15px;
+
+		@media (min-width: @screen-sm) {
+			padding: 0;
+		}
+
+		&--float-right {
+			float: right;
+		}
 	}
 
 	&__phone {

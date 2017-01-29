@@ -9,10 +9,12 @@ html(lang="ru")
 
 	body
 		include ../components/_page-header
+		include ../components/_menu
 
 		main.main(id='#{page}')
 			block content
 
 		include ../components/_page-footer
+		include ../components/_modals
 
 		include _footer
