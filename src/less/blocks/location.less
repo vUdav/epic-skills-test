@@ -1,0 +1,66 @@
+.location {
+
+	&__city {
+		font-family: @font-roboto-slab;
+		display: inline-block;
+		margin-right: 19px;
+		vertical-align: top;
+		margin-top: 3px;
+
+		span {
+			font-size: 1rem;
+			color: @text-color--gray;
+			display: block;
+			margin-top: 5px;
+			margin-left: 13px;
+		}
+
+		button {
+			position: relative;
+			margin-left: 13px;
+			&:before {
+				content: '';
+				display: inline-block;
+				.sprite(@s-header-pin);
+				position: absolute;
+				top: -2px;
+				left: -13px;
+			}
+		}
+	}
+
+	&__address-wrapper {
+		display: inline-block;
+		vertical-align: top;
+		line-height: 20px;
+		position: relative;
+	}
+
+	&__metro-list {
+		position: absolute;
+		top: 20px;
+		left: 0;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		background-color: @white;
+		border-radius: 0 0 @border-radius-base @border-radius-base;
+		box-shadow: 0 15px 20px rgba(0,0,0,.3);
+		padding: 5px 0;
+		display: none;
+		width: 100%;
+
+		&.open {
+			display: block;
+		}
+	}
+
+	&__metro-item {
+		padding: .2em .8em;
+
+		a {
+			text-decoration: none;
+		}
+	}
+
+}

@@ -1,5 +1,55 @@
 .btn {
-	&:active {}
-	&:hover {}
-	&:focus {}
+	color: @white;
+	font-family: @font-roboto-slab;
+	text-align: center;
+	background-image: linear-gradient(to top, #ff6e02 0%, #ff2819 50%, #ff6d00 100%);
+	border-radius: @border-radius-base;
+	border: 0;
+	padding: 1em 2em;
+	transition: @transition-time opacity;
+	cursor: pointer;
+
+	&:hover {
+		opacity: 0.8;
+	}
+
+	&--block {
+		display: block;
+		width: 100%;
+	}
+
+	&--clear {
+		padding: 0;
+		border-radius: 0;
+		background: none;
+		color: @text-color;
+		transition: @transition-time color;
+
+		&:hover {
+			opacity: 1;
+			color: @link-color;
+		}
+	}
+
+	&--pseudolink {
+		border-bottom: 1px dotted;
+	}
+
+	&--dropdown {
+		&:after {
+			content: '';
+			display: inline-block;
+			.sprite(@s-header-dropdown);
+			margin-left: 3px;
+			position: relative;
+			top: -1px;
+			transition: @transition-time transform;
+		}
+		&[aria-expanded="true"] {
+			&:after {
+				transform: rotate(180deg);
+				top: -2px;
+			}
+		}
+	}
 }
